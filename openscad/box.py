@@ -1,8 +1,6 @@
 from solid import *
 import numpy as np
 
-set_quality(0.1, 0.1)
-
 def radius_cube(size, redis):
     box = cube(size, center=True)
     boarder = cylinder(r=redis, h=0.01)
@@ -25,4 +23,5 @@ def box(box_length = 100, box_width = 70, box_height = 50, wall_width = 3, radiu
 
 
 if __name__ == '__main__':
+    set_quality(0.1, 0.1)
     print(box())
