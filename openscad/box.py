@@ -1,14 +1,7 @@
 from solid import *
 import numpy as np
 
-def radius_cube(size, redis) -> OpenSCADObject:
-    box = cube(size, center=True)
-    boarder = cylinder(r=redis, h=0.01)
-    m = minkowski()(
-        box,
-        boarder,
-    )
-    return m
+from shapes import radius_cube
 
 def box(box_length = 100, box_width = 70, box_height = 50, wall_width = 3, radius = 10) -> OpenSCADObject:
 

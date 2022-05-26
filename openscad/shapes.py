@@ -1,6 +1,33 @@
+from unicodedata import numeric
 from solid import *
 import math
+import numpy as np
 # no-auto-gen
+
+def radius_cube(size, radius) -> OpenSCADObject:
+    if isinstance(size, int) or isinstance(size, float):
+        size = [size, size, size]
+    size = np.array(size)
+    size -= radius * 2
+    size[2] += radius * 2
+    box = cube(size, center=True)
+    boarder = cylinder(r=radius, h=0.01)
+    m = minkowski()(
+        box,
+        boarder,
+    )
+    return m
+
+def radius_cube_full(size, radius) -> OpenSCADObject:
+    size = np.array(size)
+    size -= radius * 2
+    box = cube(size, center=True)
+    boarder = sphere(r=radius)
+    m = minkowski()(
+        box,
+        boarder,
+    )
+    return m
 
 def round_table(bottom, top, h) -> OpenSCADObject:
     """
