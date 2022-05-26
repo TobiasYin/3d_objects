@@ -1,6 +1,6 @@
 from solid import *
 import shapes
-# no_auto_gen
+# no-auto-gen
 
 def fan(leaf_length=30, leaf_count=3, fan_height=5, wall_land=1.5, core_round=3, hole_size=2.3, degree=20, up=True, reverse=False) -> OpenSCADObject: 
     """
@@ -37,7 +37,7 @@ def fan(leaf_length=30, leaf_count=3, fan_height=5, wall_land=1.5, core_round=3,
 
     core += core_top
 
-    hole_h = 5
+    hole_h = 2.5 
     h = cylinder(r=hole_size/2, h=hole_h, center=True).translate([0, 0, hole_h/2-EPSILON])
     core -= h
     return core
