@@ -57,7 +57,7 @@ difference() {
 			}
 		}
 	}
-	translate(v = [0, 0, 1.2400000000]) {
-		cylinder(center = true, h = 2.5000000000, r = 1.1500000000);
+	translate(v = [0, 0, 1.4900000000]) {
+		cylinder(center = true, h = 3, r = 1.1500000000);
 	}
 }

@@ -4,9 +4,9 @@ import config
 
 set_quality(0.4, 0.4)
 
-size = config.outter_size + 0.2
+size = config.outter_size 
 radius = config.radius
-inner = config.inner_size + 0.2
+inner = config.outter_inner_size
 wall = config.wall_width
 bottom_height = config.bottom_height
 height = bottom_height + wall * 2 + config.top_height

@@ -12,57 +12,83 @@ difference() {
 				rotate(a = [0, 0, 0.0000000000]) {
 					linear_extrude(height = 5, twist = 40) {
 						intersection() {
-							translate(v = [0, 16.8000000000, 0]) {
+							translate(v = [0, 17.5000000000, 0]) {
 								difference() {
-									circle(r = 16.8000000000);
-									circle(r = 15.3000000000);
+									circle(r = 17.5000000000);
+									circle(r = 16.0000000000);
 								}
 							}
-							square(size = 16.8000000000);
+							square(size = 17.5000000000);
 						}
 					}
 				}
-				rotate(a = [0, 0, 90.0000000000]) {
+				rotate(a = [0, 0, 60.0000000000]) {
 					linear_extrude(height = 5, twist = 40) {
 						intersection() {
-							translate(v = [0, 16.8000000000, 0]) {
+							translate(v = [0, 17.5000000000, 0]) {
 								difference() {
-									circle(r = 16.8000000000);
-									circle(r = 15.3000000000);
+									circle(r = 17.5000000000);
+									circle(r = 16.0000000000);
 								}
 							}
-							square(size = 16.8000000000);
+							square(size = 17.5000000000);
+						}
+					}
+				}
+				rotate(a = [0, 0, 120.0000000000]) {
+					linear_extrude(height = 5, twist = 40) {
+						intersection() {
+							translate(v = [0, 17.5000000000, 0]) {
+								difference() {
+									circle(r = 17.5000000000);
+									circle(r = 16.0000000000);
+								}
+							}
+							square(size = 17.5000000000);
 						}
 					}
 				}
 				rotate(a = [0, 0, 180.0000000000]) {
 					linear_extrude(height = 5, twist = 40) {
 						intersection() {
-							translate(v = [0, 16.8000000000, 0]) {
+							translate(v = [0, 17.5000000000, 0]) {
 								difference() {
-									circle(r = 16.8000000000);
-									circle(r = 15.3000000000);
+									circle(r = 17.5000000000);
+									circle(r = 16.0000000000);
 								}
 							}
-							square(size = 16.8000000000);
+							square(size = 17.5000000000);
 						}
 					}
 				}
-				rotate(a = [0, 0, 270.0000000000]) {
+				rotate(a = [0, 0, 240.0000000000]) {
 					linear_extrude(height = 5, twist = 40) {
 						intersection() {
-							translate(v = [0, 16.8000000000, 0]) {
+							translate(v = [0, 17.5000000000, 0]) {
 								difference() {
-									circle(r = 16.8000000000);
-									circle(r = 15.3000000000);
+									circle(r = 17.5000000000);
+									circle(r = 16.0000000000);
 								}
 							}
-							square(size = 16.8000000000);
+							square(size = 17.5000000000);
+						}
+					}
+				}
+				rotate(a = [0, 0, 300.0000000000]) {
+					linear_extrude(height = 5, twist = 40) {
+						intersection() {
+							translate(v = [0, 17.5000000000, 0]) {
+								difference() {
+									circle(r = 17.5000000000);
+									circle(r = 16.0000000000);
+								}
+							}
+							square(size = 17.5000000000);
 						}
 					}
 				}
 			}
-			cylinder(h = 5, r = 16.8000000000);
+			cylinder(h = 5, r = 17.5000000000);
 		}
 		translate(v = [0, 0, 5]) {
 			rotate_extrude(angle = 360) {

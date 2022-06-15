@@ -1,6 +1,6 @@
 from solid import *
 import shapes
-# no-auto-gen
+# 
 
 
 def fan(leaf_length=30, leaf_count=3, fan_height=5, wall_land=1.5, core_round=3, hole_size=2.3, hole_depth=3, degree=20, up=True, reverse=False) -> OpenSCADObject:
@@ -21,8 +21,12 @@ def fan(leaf_length=30, leaf_count=3, fan_height=5, wall_land=1.5, core_round=3,
         up = not up
 
     r = leaf_length
-    s = (circle(r) - circle(r-wall_land)).translate([0, r, 0]) * square(r)
+    s = (circle(r*2) - circle(r*2-wall_land)).translate([0, 2*r, 0]) * square(r*2)
     leaf = linear_extrude(fan_height, twist=degree)(s)
+
+    leaf = leaf.translate([-10, -10, 0])
+    
+    print(leaf)
 
     core_top = shapes.round_table(
         core_round / 2, core_round, fan_height/6).translate([0, 0, fan_height])
@@ -47,4 +51,5 @@ def fan(leaf_length=30, leaf_count=3, fan_height=5, wall_land=1.5, core_round=3,
 
 
 if __name__ == '__main__':
-    print(fan())
+    # print(fan())
+    fan()

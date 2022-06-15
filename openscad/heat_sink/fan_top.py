@@ -7,7 +7,7 @@ set_quality(0.4, 0.4)
 size = config.inner_size
 wall = config.wall_width
 radius = config.radius
-height = config.fan_top 
+height = config.top_height
 box = shapes.radius_cube([size, size, height], radius)
 box_inside = shapes.radius_cube(
     [size - 2 * wall, size - 2 * wall, height], radius)

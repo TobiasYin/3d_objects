@@ -1,7 +1,8 @@
 outter_size = 40
 wall_width = 1.6
-inner_size = outter_size - 2 * wall_width
-fan_size = inner_size - 2 * wall_width
+outter_inner_size = outter_size - 2 * wall_width
+inner_size = outter_inner_size - 0.2
+fan_size = inner_size - wall_width
 fan_length = fan_size / 2
 radius = 4
 fan_height = 6
